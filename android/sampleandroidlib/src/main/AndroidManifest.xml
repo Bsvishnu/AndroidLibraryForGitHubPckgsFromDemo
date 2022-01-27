@@ -1,2 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bigstep.libraries.sampleandroidlib" />
+    package="com.bigstep.libraries.sampleandroidlib" >
+
+    <application>
+
+        <activity android:name=".ReactActivity">
+
+        </activity>
+    </application>
+</manifest>
