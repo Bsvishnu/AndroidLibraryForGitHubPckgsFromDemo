@@ -1,8 +1,9 @@
-package com.enefce.samples.androidlibdemo
+package com.bigstep.samples.androidlibdemo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.enefce.libraries.sampleandroidlib.SampleAndroidLibMain
+import com.bigstep.samples.androidlibdemo.R
+import com.bigstep.libraries.sampleandroidlib.SampleAndroidLibMain
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

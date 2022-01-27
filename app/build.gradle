@@ -13,7 +13,7 @@ githubProperties.load(new FileInputStream(githubPropertiesFile))
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "com.enefce.samples.androidlibdemo"
+        applicationId "com.bigstep.samples.androidlibdemo"
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
@@ -35,9 +35,9 @@ android {
              *  e.g. "https://maven.pkg.github.com/enefce/AndroidLibraryForGitHubPackagesDemo"
              */
             //url = uri("https://maven.pkg.github.com/UserID/REPOSITORY")
-            url = uri("https://maven.pkg.github.com/enefce/AndroidLibraryForGitHubPackagesDemo")
+//            url = uri("https://maven.pkg.github.com/enefce/AndroidLibraryForGitHubPackagesDemo")
 
-//            url = uri("https://maven.pkg.github.com/Bsvishnu/MyApp")
+            url = uri("https://maven.pkg.github.com/Bsvishnu/AndroidLibraryForGitHubPckgsFromDemo")
 //            url = uri("https://maven.pkg.github.com/Bsvishnu/PlayLibGithubPackage")
             credentials {
                 /**Create github.properties in root project folder file with gpr.usr=GITHUB_USER_ID  & gpr.key =PERSONAL_ACCESS_TOKEN**/
@@ -58,12 +58,13 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     //Use SampleAndroidLib library
-    implementation 'com.enefce.libraries:sampleAndroidLib:1.0.1'
+//    implementation 'com.enefce.libraries:sampleAndroidLib:1.0.1'
 
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.core:core-ktx:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation project(path: ':sampleandroidlib')
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
